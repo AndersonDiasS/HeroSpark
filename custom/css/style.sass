@@ -1,12 +1,15 @@
 $primary: #FF305C
+$h-i: 98vh
+$white: white
 
-    
-html
-    font-family: 'Muli'
+ 
+body
+    font-family: 'Muli'!important
     font-style: normal
 
 nav
-    position: absolute
+    position: fixed
+    z-index: 2
     left: 0%
     right: 0%
     top: 0%
@@ -18,9 +21,11 @@ nav
 
 #First-item
     width: 100%
-    height: 98vh
+    height: $h-i
     background:  linear-gradient(243.46deg, rgba(116, 39, 241, 0.6) 0.01%, rgba(38, 38, 38, 0.582) 100%)
-
+    background-image: url('../img/Background-inicio.jpg')
+    background-size: 100%
+    background-position: center
 
 #video-content
     width: 100%
@@ -31,7 +36,92 @@ nav
     background: #262626
     height: 65vh
 
+.filter-bg
+    background: linear-gradient(243.46deg, rgba(116, 39, 241, 0.6) 0.01%, rgba(38, 38, 38, 0.582) 100%)
+    height: $h-i
 
+
+.tect-content
+    left: 59px
+    top: 225px
+    height: 45vh 
+
+.text-content h1
+    font-size: 52px
+    font-weight: 700
+    line-height: 120%
+    color: $white
+
+.text-content p
+    margin-top: 20px
+    color: white
+    font-size: 30px
+
+.btn-primary
+    background-color: $primary!important // Não faça isso em casa // 
+    color: $white
+    border-color: #ff305c1f!important 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3)
+    width: 260px
+    height: 50px    
+    font-family: Muli
+    font-weight: 900
+    font-size: 20px
+    line-height: 30px
+    transition: all 0.5s
+    margin-top: 32px
+
+
+.btn-primary:hover
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3)
+    transition: all 0.5s
+    margin-top: 37px
+    background-color: #FF567A!important
+
+
+ 
+
+
+.black-card
+    width: 69%
+    height: 80%
+    margin-top: 18vh
+ 
+.video-box
+    background-image: url('../img/Background-video.jpg')
+    width: 550px
+    height: 399px
+    top: -6vh
+    position: absolute
+    right: 1vh
+
+.spark
+    // Não consegui encontrar esse vetor para o projeto, img quebra galho para esse caso 
+    width: 48vw
+    position: absolute
+    left: -11vw
+    top: -15vh
+    -webkit-transform: rotate(6deg)
+    transform: rotate(6deg)
+
+
+.text-video h2
+    font-size: 48px
+    color: $primary
+    font-weight: 900
+    line-height: 58px
+
+.text-video p
+    font-family: Muli
+    font-style: normal
+    font-weight: normal
+    font-size: 0.8em
+    line-height: 23px
+ 
+.align-content
+    margin-left: 100px
+    margin-top: 55px
+    
 // #video-content::after
 //     content: ''
 //     height: 200px
