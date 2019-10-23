@@ -19,6 +19,18 @@ nav
     height: 4vh
 
 
+.mt-10V
+    margin-top: 10vh
+
+.mat-button
+    background: unset
+    border: unset
+
+.circle-content
+    margin-top: 10px
+
+
+
 #First-item
     width: 100%
     height: $h-i
@@ -29,7 +41,7 @@ nav
 
 #video-content
     width: 100%
-    height: 120vh
+    height: 130vh
 
 
 #black-rectangle
@@ -87,6 +99,12 @@ nav
     height: 80%
     margin-top: 18vh
  
+.player
+    left: 13vw
+    top: 13vh
+    position: absolute
+    font-size: 191px!important
+
 .video-box
     background-image: url('../img/Background-video.jpg')
     width: 550px
@@ -94,6 +112,12 @@ nav
     top: -6vh
     position: absolute
     right: 1vh
+
+.layer
+    background: linear-gradient(180deg, rgba(0, 223, 236, 0.5) 0%, rgba(116, 39, 241, 0.5) 100%)
+    opacity: 0.5
+    width: 100%
+    height: 100%
 
 .spark
     // Não consegui encontrar esse vetor para o projeto, img quebra galho para esse caso 
@@ -122,15 +146,27 @@ nav
     margin-left: 100px
     margin-top: 55px
     
-// #video-content::after
-//     content: ''
-//     height: 200px
-//     background: #262626
-//     clip-path: polygon(0 0, 0 100%, 100% 100%)
-//     -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%)
-//     position: absolute
-//     top: -200px
-//     width: 100%
+
+.circle-img
+    width: 190px
+    height: 190px
+    background-image: linear-gradient(180deg, rgba(0, 223, 236, 0.5) 0%, rgba(116, 39, 241, 0.5) 100%), url('../img/perfil-circle.jpg')
+    border-radius: 50%
+    background-position: left
+    margin-left: auto
+    margin-right: auto
+    
+
+ 
+#video-content::after
+    content: ''
+    height: 550px
+    background: #262626
+    clip-path: polygon(100% 0, 0 13%, 100% 15%)
+    -webkit-clip-path: polygon(100% 0, 0 13%, 100% 15%)
+    position: absolute
+    /* top: -200px; */
+    width: 100%
 
 footer
     background: $primary
